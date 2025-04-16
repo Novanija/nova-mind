@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaMind AI — Revolutionizing Business with AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0a0a14;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(0,0,0,0.7);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ff4081;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: linear-gradient(45deg, #ff4081, #7c4dff);
+      border: none;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 12px #ff4081;
+    }
+
+    .btn:hover {
+      background: linear-gradient(45deg, #7c4dff, #ff4081);
+      box-shadow: 0 0 20px #ff4081;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('https://source.unsplash.com/1600x900/?ai,futuristic,technology') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(10, 10, 20, 0.75);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-content {
+      color: #fff;
+      max-width: 800px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .hero-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section {
+      padding: 100px 50px 50px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #ff4081;
+    }
+
+    .section p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto 50px;
+      line-height: 1.7;
+    }
+
+    .service-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: #161622;
+      padding: 30px;
+      border-radius: 15px;
+      width: 280px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px #7c4dff;
+    }
+
+    .card h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #ddd;
+    }
+
+    footer {
+      padding: 40px 20px;
+      background: #111;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    footer p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      nav {
+        margin: 15px 0;
+      }
+
+      .hero-content h1 {
+        font-size: 38px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+      }
+
+      .section h2 {
+        font-size: 28px;
+      }
+
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">NovaMind AI</div>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <button class="btn" onclick="window.location='#services'">Get Started</button>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+  <div class="overlay">
+    <div class="hero-content">
+      <h1>Revolutionizing Business with AI</h1>
+      <p>NovaMind AI delivers intelligent, future-ready solutions that transform how companies operate in a digital-first world. Let’s build the future — together.</p>
+      <button class="btn" onclick="window.location='#services'">Explore Services</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+  <p>At NovaMind AI, we combine innovation with technology to offer world-class AI-powered services designed to elevate your business to the next level.</p>
+
+  <div class="service-cards">
+    <div class="card">
+      <h3>AI-Powered Analytics</h3>
+      <p>Unlock data-driven insights and optimize your business strategy with cutting-edge AI analytics.</p>
+    </div>
+    <div class="card">
+      <h3>Smart Automation</h3>
+      <p>Streamline your operations, reduce costs, and enhance efficiency through intelligent process automation.</p>
+    </div>
+    <div class="card">
+      <h3>AI Chatbots</h3>
+      <p>Deliver seamless customer support and boost engagement with advanced AI-driven chatbot systems.</p>
+    </div>
+    <div class="card">
+      <h3>Custom AI Solutions</h3>
+      <p>Get tailor-made AI systems designed to solve your unique business challenges with precision and speed.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <p>&copy; 2024 NovaMind AI. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
