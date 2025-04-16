@@ -1,0 +1,2 @@
+# nova-mind
+landing page
